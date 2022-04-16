@@ -33,6 +33,6 @@
     ],
     "moduleResolution": "node"
   },
-  "include": ["**/*.ts", "**/*.tsx", "jest.config.js", ".eslintrc.js", "rollup.config.js"],
+  "include": ["**/*.ts", "**/*.tsx", "jest.config.js", ".eslintrc.js", "rollup.config.js", "commitlint.config.js"],
   "exclude": ["node_modules"]
 }
