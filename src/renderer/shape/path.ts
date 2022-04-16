@@ -1,5 +1,6 @@
 import { shape } from "./shape";
-import { Context, PathOptions } from "./interface";
+import { PathOptions } from "./interface";
+import { Context } from "../context";
 
 // path 介绍：https://developer.mozilla.org/zh-CN/docs/Web/SVG/Tutorial/Paths
 // path 的属性 d （路径）是一个字符串，拼接起来比较麻烦，这里我们通过数组去生成

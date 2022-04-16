@@ -1,5 +1,6 @@
 import { circleCreator } from "./circle";
-import { Context, RingOptions } from "./interface";
+import { RingOptions } from "./interface";
+import { Context } from "../context";
 
 export function ringCreator(context: Context, attributes: RingOptions) {
   // r1 是内圆的半径，r2 是外圆的半径

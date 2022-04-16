@@ -1,5 +1,6 @@
 import { shape } from "./shape";
-import { Context, TextOptions } from "./interface";
+import { TextOptions } from "./interface";
+import { Context } from "../context";
 
 // text 元素是将展示内容放在标签内部，而不是作为标签的属性
 // <text text='content' /> ❌

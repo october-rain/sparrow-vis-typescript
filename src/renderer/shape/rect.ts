@@ -1,5 +1,6 @@
 import { shape } from "./shape";
-import { Context, RectOptions } from "./interface";
+import { RectOptions } from "./interface";
+import { Context } from "../context";
 
 // rect 不支持 width 和 height 是负数，下面这种情况将绘制不出来
 // <rect width="-60" height="-60" x="100" y="100" /> ❌

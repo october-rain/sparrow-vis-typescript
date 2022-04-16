@@ -1,10 +1,5 @@
 export type Type = "line" | "circle" | "text" | "rect" | "path" | "ring";
 
-export interface Context {
-  node?: SVGElement;
-  group: SVGElement;
-}
-
 export type Shape = Line | Circle | Text | Rect | Path | Ring;
 export type Line = LineOptions;
 export type Circle = CircleOptions;

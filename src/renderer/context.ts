@@ -1,5 +1,10 @@
 import { createSVGElement, mount } from "./utils";
 
+export interface Context {
+  node?: SVGElement;
+  group: SVGElement;
+}
+
 export function createContext(width: number, height: number) {
   const svg = createSVGElement("svg");
   svg.setAttribute("width", width.toString());
@@ -12,5 +17,5 @@ export function createContext(width: number, height: number) {
   return {
     node: svg,
     group: g,
-  };
+  } as Context;
 }

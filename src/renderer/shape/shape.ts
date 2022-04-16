@@ -1,5 +1,6 @@
 import { applyAttributes, createSVGElement, mount } from "../utils";
-import { Type, Context, Shape } from "./interface";
+import { Type, Shape } from "./interface";
+import { Context } from "../context";
 
 export function shape(type: Type, context: Context, attributes: Shape) {
   const { group } = context; // 挂载元素
