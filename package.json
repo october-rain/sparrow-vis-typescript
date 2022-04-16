@@ -8,6 +8,7 @@
     "test": "jest --coverage",
     "test:live": "cross-env DEBUG_MODE=1 jest --coverage",
     "build": "rimraf -rf ./dist ./lib ./esm && rollup --config",
+    "ci": "run-s lint test build",
     "prepare": "husky install"
   },
   "repository": {
