@@ -15,12 +15,19 @@ module.exports = {
   },
   plugins: ["@typescript-eslint", "import"],
   rules: {
-    // 这里添加一行规则把这条规则隐藏
-    "import/prefer-default-export": 0,
-    quotes: "off",
     "@typescript-eslint/quotes": ["error", "double"],
-    // "import/no-unresolved": "off",
-    // "import/extensions": "off",
+    // 关闭 eslint 的如下功能
+    quotes: "off",
+    "import/prefer-default-export": 0,
+    "no-use-before-define": 0,
+    "no-shadow": 0,
+    "no-restricted-syntax": 0,
+    "no-return-assign": 0,
+    "no-param-reassign": 0,
+    "no-sequences": 0,
+    "no-loop-func": 0,
+    "no-nested-ternary": 0,
+    "object-curly-newline": 0,
   },
   settings: {
     "import/resolver": {
