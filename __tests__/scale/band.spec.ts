@@ -10,7 +10,7 @@ describe("createBand", () => {
     expect(s("a")).toBe(2);
     expect(s("b")).toBe(12);
     expect(s("c")).toBe(22);
-    expect((s as any).bandWidth()).toBe(8);
-    expect((s as any).step()).toBe(10);
+    expect(s.bandWidth()).toBe(8);
+    expect(s.step()).toBe(10);
   });
 });

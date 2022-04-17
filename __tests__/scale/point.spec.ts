@@ -10,7 +10,7 @@ describe("createPoint", () => {
     expect(s("a")).toBe(8);
     expect(s("b")).toBe(16);
     expect(s("c")).toBe(24);
-    expect((s as any).bandWidth()).toBe(0);
-    expect((s as any).step()).toBe(8);
+    expect(s.bandWidth()).toBe(0);
+    expect(s.step()).toBe(8);
   });
 });
