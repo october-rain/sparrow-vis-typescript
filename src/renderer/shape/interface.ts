@@ -14,6 +14,7 @@ export interface LineOptions {
   y1: number;
   y2: number;
   stroke: string;
+  className?: string;
 }
 
 export interface CircleOptions {
@@ -23,12 +24,14 @@ export interface CircleOptions {
   fill: string;
   stroke: string;
   strokeWidth: number;
+  className?: string;
 }
 
 export interface TextOptions {
   x: number;
   y: number;
   text: string;
+  className?: string;
 }
 
 export interface RectOptions {
@@ -36,12 +39,14 @@ export interface RectOptions {
   y: number;
   width: number;
   height: number;
+  className?: string;
 }
 
 export interface PathOptions {
   d: (string | number)[][];
   fill: string;
   stroke: string;
+  className?: string;
 }
 
 export interface RingOptions {
@@ -52,4 +57,5 @@ export interface RingOptions {
   strokeWidth: number;
   stroke?: string;
   fill: string;
+  className?: string;
 }

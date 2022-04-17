@@ -14,6 +14,7 @@ describe("transform", () => {
       y: 0,
       width: 50,
       height: 50,
+      className: "r1",
     });
     renderer.save();
 
@@ -22,6 +23,7 @@ describe("transform", () => {
       y: 0,
       width: 50,
       height: 50,
+      className: "r2",
     });
     renderer.restore();
 
@@ -30,6 +32,7 @@ describe("transform", () => {
       y: 0,
       width: 50,
       height: 50,
+      className: "r3",
     });
     renderer.restore();
 
@@ -38,6 +41,7 @@ describe("transform", () => {
       y: 100,
       width: 50,
       height: 50,
+      className: "r4",
     });
 
     mount(createDiv(), renderer.node());
@@ -46,7 +50,9 @@ describe("transform", () => {
       "translate(200, 100) rotate(60) scale(2, 3)",
     );
     expect((r2.parentNode as SVGAElement).getAttribute("transform")).toBeNull();
-    expect((r3.parentNode as SVGAElement).getAttribute("transform")).toBeNull();
+    expect((r3.parentNode as SVGAElement).getAttribute("transform")).toBe(
+      "translate(200, 100) rotate(60) scale(2, 3)",
+    );
     expect((r4.parentNode as SVGAElement).getAttribute("transform")).toBeNull();
   });
 });
